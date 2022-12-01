@@ -33,7 +33,6 @@ if __name__ == '__main__':
     clicked = st.button(label="Search", type="primary")
 
     if clicked:
-        print("### clicked")
         property_list = request(search_text, search_limit)
         gallery_display(property_list)
 
